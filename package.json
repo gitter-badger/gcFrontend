@@ -1,44 +1,31 @@
 {
-  "name": "gulp-starter",
-  "version": "1.3.0",
-  "author": {
-    "name": "Juri Saltbacka",
-    "email": "juri@3bola.io"
+  "name": "gc-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/3bola/gulp-starter.git"
+    "url": "git+https://github.com/koriwi/gcFrontend.git"
   },
-  "scripts": {
-    "install": "bower install && gulp -o",
-    "start": "gulp"
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/koriwi/gcFrontend/issues"
   },
+  "homepage": "https://github.com/koriwi/gcFrontend#readme",
   "devDependencies": {
-    "bower": "*",
-    "del": "*",
-    "express": "*",
-    "gulp": "*",
-    "gulp-autoprefixer": "*",
-    "gulp-bower": "*",
-    "gulp-cache": "*",
-    "gulp-concat": "*",
-    "gulp-declare": "*",
-    "gulp-define-module": "*",
-    "gulp-filter": "*",
-    "gulp-handlebars": "*",
-    "gulp-if": "*",
-    "gulp-if-else": "*",
-    "gulp-imagemin": "*",
-    "gulp-livereload": "*",
-    "gulp-minify-css": "*",
-    "gulp-minify-html": "*",
-    "gulp-sass": "*",
-    "gulp-uglify": "*",
-    "gulp-useref": "*",
-    "gulp-util": "*",
-    "gulp-watch": "*",
-    "minimist": "*",
-    "opn": "*",
-    "standard": "*"
+    "bower": "^1.7.9",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-browserify2": "0.0.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-stylus": "^2.3.1",
+    "gulp-uglify": "^1.5.3",
+    "gulp-watch": "^4.3.5",
+    "require-dir": "^0.3.0"
   }
 }

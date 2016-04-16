@@ -3,5 +3,8 @@
   "dependencies": {
     "jquery": "<2.0.0",
     "handlebars": "*"
+  },
+  "devDependencies": {
+    "bootstrap": "~3.3.6"
   }
 }

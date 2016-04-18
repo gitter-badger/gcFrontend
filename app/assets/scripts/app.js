@@ -1,11 +1,26 @@
 // Controller
-controllers = {
+var controllers = {
   home: require('./controller/home'),
   server: require('./controller/server')
 };
 
+// Components
+var components = [
+  {
+    name: 'actions',
+    class: require('../../components/actions/script')
+  }
+];
+var loadedComponents = [];
+
+// Component JS Loader
+for (i = 0; i < components.length; i++) {
+  component = components[i];
+  loadedComponents.push(new components[i].class($('.body').find('.component.' + components[i].name)));
+}
+
 // Router
-router = require('./router');
+var router = require('./router');
 
 var app = angular.module('panelApp', [
   'ngRoute'

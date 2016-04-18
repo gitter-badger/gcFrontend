@@ -6,5 +6,6 @@ require('./clean');
 require('./stylus');
 require('./js');
 require('./head');
+require('./vendor');
 
-gulp.task('default', ['clean', 'jade', 'stylus', 'js', 'headJS']);
+gulp.task('default', ['clean', 'jade', 'stylus', 'js', 'headJS', 'vendorJS']);

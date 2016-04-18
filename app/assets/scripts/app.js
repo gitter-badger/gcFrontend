@@ -14,10 +14,12 @@ var components = [
 var loadedComponents = [];
 
 // Component JS Loader
-for (i = 0; i < components.length; i++) {
-  component = components[i];
-  loadedComponents.push(new components[i].class($('.body').find('.component.' + components[i].name)));
-}
+$(document).on('ready', function() {
+  for (i = 0; i < components.length; i++) {
+    component = components[i];
+    loadedComponents.push(new components[i].class($('.partial.' + components[i].name)));
+  }
+});
 
 // Router
 var router = require('./router');

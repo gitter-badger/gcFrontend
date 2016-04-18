@@ -1,6 +1,7 @@
 // Controller
 controllers = {
-  home: require('./controller/home')
+  home: require('./controller/home'),
+  server: require('./controller/server')
 };
 
 // Router
@@ -11,6 +12,7 @@ var app = angular.module('panelApp', [
 ]);
 
 app.controller('homeController', ['$scope', '$http', function($scope, $http) { controllers.home($scope, $http) }]);
+app.controller('serverController', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams) { controllers.server($scope, $http, $routeParams) }]);
 
 app.config(['$routeProvider', function($routeProvider) {
   router($routeProvider);

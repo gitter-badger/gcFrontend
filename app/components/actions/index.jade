@@ -1,0 +1,4 @@
+.partial.actions
+  ul
+    li(ng-repeat="command in server.commands")
+      button(data-command="{{command}}") {{command}}

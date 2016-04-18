@@ -1,3 +1,6 @@
+.partial.server-info h1 {
+  font-size: 20px;
+}
 .partial.server {
   display: inline-block;
   width: 300px;

@@ -12,14 +12,14 @@ module.exports = function($scope,$http) {
     .success(function(data,status,headers,config){
       console.log(data);
       if(data.result){
-        console.log(data.result);
+        console.log("SUCCESS: "+data.result);
       }else if(data.error)
-            console.error(data.error);
+            console.error("ERROR:"+data.error);
     })
     .error(function(data, status, headers, config){
-        console.error(data);
+        console.error("ERROR:"+data);
     });
-    
+
   	console.log(server + ";"+ command);
   }
 }

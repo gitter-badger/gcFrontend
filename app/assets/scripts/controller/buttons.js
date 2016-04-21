@@ -11,7 +11,7 @@ module.exports = function($scope,$http) {
   	$http.post("http://176.9.19.16:8080/api/servers",data)
     .success(function(data,status,headers,config){
       console.log(data);
-      $("#status-"+server).append(data.status);
+      $("#status-"+server).innerHtml("Status: "+data.status+"!");
 
     })
     .error(function(data, status, headers, config){

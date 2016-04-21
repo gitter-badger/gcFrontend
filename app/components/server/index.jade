@@ -4,5 +4,7 @@ li.partial.server(ng-repeat="(id, server) in servers")
       h3.server-title  {{server.name}}
     include ../actions/index
     <p id=status-{{id}}>Status:</p>
+    <textarea id=message-{{id}}>Message:</textarea>
+
   
   

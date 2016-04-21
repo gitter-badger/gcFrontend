@@ -12,6 +12,8 @@ module.exports = function($scope,$http) {
     .success(function(data,status,headers,config){
       console.log(data);
       $("#status-"+server).html("Status: "+data.status+"!");
+      if(data.message)
+        $("#message-"+server).val("Message: "+data.message+"!");
 
     })
     .error(function(data, status, headers, config){

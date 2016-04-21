@@ -6,7 +6,7 @@ module.exports = function($scope,$http) {
   		"action":command
   	};
   	$http.defaults.headers.post["Content-Type"] = 'application/json';
-  	$http.defaults.headers.post["Access-Control-Allow-Origin"] = "*";
+  	//$http.defaults.headers.post["Access-Control-Allow-Origin"] = "*";
 
   	$http.post("http://176.9.19.16:8080/api/servers",data)
   	.then(function(e){

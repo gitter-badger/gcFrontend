@@ -1,10 +1,10 @@
 li.partial.server(ng-repeat="(id, server) in servers")
-  div(class="graybox")
-    a(href='#/server/{{id}}')
-      h3.server-title  {{server.name}}
-    include ../actions/index
-    <p id=status-{{id}}>Status:</p>
-    <textarea id=message-{{id}}>Message:</textarea>
+    div(class="graybox")
+        a(href='#/server/{{id}}')
+            h3.server-title  {{server.name}}
+        include ../actions/index
+        <p id=status-{{id}}>Status:</p>
+        <textarea id=message-{{id}}>Message:</textarea>
 
-  
-  
+
+

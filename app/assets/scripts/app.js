@@ -1,7 +1,8 @@
 // Controller
 var controllers = {
   home: require('./controller/home'),
-  server: require('./controller/server')
+  server: require('./controller/server'),
+  buttons: require('./controller/buttons')
 };
 
 // Components
@@ -30,6 +31,7 @@ var app = angular.module('panelApp', [
 
 app.controller('homeController', ['$scope', '$http', function($scope, $http) { controllers.home($scope, $http) }]);
 app.controller('serverController', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams) { controllers.server($scope, $http, $routeParams) }]);
+app.controller('buttonController', ['$scope', '$http', function($scope, $http) { controllers.buttons($scope, $http) }]);
 
 app.config(['$routeProvider', function($routeProvider) {
   router($routeProvider);

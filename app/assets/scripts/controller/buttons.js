@@ -11,13 +11,11 @@ module.exports = function($scope,$http) {
   	$http.post("http://176.9.19.16:8080/api/servers",data)
     .success(function(data,status,headers,config){
       console.log(data);
-      if(data.result){
-        console.log("SUCCESS: "+data.result);
-      }else if(data.error)
-            console.error("ERROR:"+data.error);
+      $("status-"+server).append(data.status);
+
     })
     .error(function(data, status, headers, config){
-        console.error("ERROR:"+data);
+      console.error("ERROR:"+data);
     });
 
   	console.log(server + ";"+ command);
